@@ -1,0 +1,32 @@
+.background {
+    min-height: 100vh; // border-right: 677px solid white;
+}
+@media (min-width: 992px){
+    .background {
+        background-image: url("../assets/bg-01.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+}
+
+.sub-button {
+    font-family: $font-family-2;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $dark-grey;
+    margin-top: 16px;
+}
+
+
+#home-right-block{
+    margin-bottom: 120px;
+    margin-top: 160px;
+}
+
+.bienvenue{
+    color: $blue;
+}

@@ -1,0 +1,12 @@
+.bio-block {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+@media (min-width:992px) {
+    .bio-block {
+        margin-top: 250px;
+        margin-bottom: 200px;
+    }
+}
+

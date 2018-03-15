@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap scripts& css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Custom scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/searchbar.js"></script>
+
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="stylesheets/main.min.css">
+
+
+    <title>Ombline Zarzicki</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white">
+            <a class="navbar-brand" href="index.html" id="navbar-brand">
+                <img src="../assets/logo.png" alt="" style="width:150px; height:auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-big" href="index.html">ACCEUIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-big" href="bio.html">BIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-small" href="category.html">SANTÉ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-small" href="category.html">PSYCHOLOGIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-small" href="category.html">ENTREPRISE</a>
+                    </li>
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+                </form> -->
+                <div class='input-wrapper'>
+                    <input id='search-input' placeholder='Search...' />
+                    <span id='highlight-span' class='input-highlight' />
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+    <!-- Hero Image -->
+    <div class="container-fluid article-hero-image" style="background-image: url('../assets/hero.jpg');">
+    </div>
+
+
+    <!-- Article -->
+    <div class="container article-container">
+        <!-- Article Date/Update -->
+        <div class="date-badge col-12 mt-4 ml-1">PARUTION
+            <span>12/01/2017</span>
+        </div>
+        <div class="date-badge col-12 mt-1 ml-1">MISE À JOUR
+            <span>18/02/2018</span>
+        </div>
+
+
+        <!-- Big Title (WORDPRESS INPUT) -->
+        <div class="text-style-4 mt-4 col-12 col-lg-11">
+            La France se distingue dans le domaine de la recherche scientifique
+        </div>
+
+
+
+
+        <div class="article-content col-12 col-lg-8">
+
+            <!-- Article content (WORDPRESS INPUT) -->
+
+            <chapeau>
+                Portée par l’investissement public, qui assure son rayonnement sur la scène internationale, la recherche fondamentale n’est
+                cependant qu’une étape. Encore faut-il réussir le pari de la transformation et déboucher sur des innovations
+                valorisables par l'industrie.
+            </chapeau>
+
+            <img src="assets/hero.jpg" alt="">
+
+            <p>Au classement mondial des 100 entreprises les plus innovantes, la France occupe la troisième place mondiale,
+                derrière les Etats-Unis et le Japon, et la première en Europe. Parmi les 10 entreprises françaises qui excellent,
+                le CNRS, le CEA (Commissariat à l’Energie Atomique), l’IFPEN (Institut Français du Pétrole Energies Nouvelles),
+                Safran, Thalès et Alstom s’imposent dans les secteurs de la recherche scientifique, de l’aérospatiale et
+                de l’énergie. Total fait son entrée dans le classement, tandis qu’Alcatel Lucent cède sa place. Arkema, Valeo
+                et Saint-Gobain maintiennent quant à eux leur position dans les secteurs de la chimie, de l’automobile et
+                de l’industrie.
+            </p>
+
+            <titre1>
+                Trois tendances de fond au niveau mondial
+            </titre1>
+
+            <titre2>
+                Les entreprises innovantes investissent massivement en R&D
+            </titre2>
+
+            <p>
+                Publié par Clarivate Analytics (ex Thomson Reuters), le classement annuel des 100 entreprises les plus innovantes apporte
+                un éclairage sur les tendances observées en termes de stratégie. En 2015, ces entreprises ont généré plus
+                de 4 milliards de dollars de revenus et ont investi près de 227 milliards de dollars en R&D. Cet effort est
+                significatif.
+                <em>A titre de comparaison, c’est 9,1% de plus que l’investissement en R&D des 100 plus grandes sociétés cotées
+                    aux Etats-Unis.</em>
+            </p>
+
+            <figure>
+                <img src="assets/hero.jpg" alt="">
+                <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+            </figure>
+
+            <titre2>
+                Elles élargissent leur gamme d’activités et se lancent à la conquête de nouveaux marchés
+            </titre2>
+
+            <p>Privilégiant la diversification, on observe que ces championnes de l’innovation étendent le dépôt de leurs brevets
+                à des activités nouvelles et différentes de leur core business. Apple et Google partent à l’assaut de la
+                voiture connectée, tandis qu’Amazon vient de déposer un brevet d’entrepôt aérien pour ses livraisons par
+                drone.
+            </p>
+
+            <titre2>
+                Elles s’appuient sur les concepts révolutionnaires portés par les NBIC
+            </titre2>
+
+            <p>
+                L’analyse des brevets déposés révèle par ailleurs une intensification de l’innovation technologique dans les quatre domaines
+                suivants : semi-conducteurs et batteries, transmission de l’information, traitement des données (yc cloud
+                computing et e-commerce) et santé (dispositifs médicaux et préparations). Les NBIC (Nanotechnologies, Biotechnologies,
+                Informatique et sciences Cognitives) sont au coeur des préoccupations.
+            </p>
+
+            <p>
+                Parmi les récents résultats obtenus, citons deux avancées majeures dans le domaine du numérique :
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Sécurité informatique</strong> : « mise en évidence d’une faille, baptisée Logiam, dans les protocoles
+                    de chiffrement cryptographique [protocole TLS], censés assurer la sécurité des échanges d’informations
+                    sur Internet […], avec des conséquences allant de l’absence de confidentialité à l’usurpation d’identité
+                    de serveurs » ;
+                </li>
+                <li>
+                    <strong>Lutte contre la criminalité </strong>: « signature d’une convention entre l’Institut de recherche en
+                    informatique de Toulouse et l’Ecole Nationale Supérieure de Police [afin de] faciliter la mise en oeuvre
+                    de recherches en matière de sécurité, au profit de l’ensemble des directions de la police nationale ».
+                </li>
+                <li>
+                    <strong>La santé,</strong> avec la « conception d’une thérapie contre la leucémie myéloïde chronique dont la
+                    prévalence et le taux de récidive sont élevés. Ce traitement inédit cible les cellules souches à l’origine
+                    de la maladie. […] Les premiers patients traités, dans le cadre d’un essai clinique, ne présentent plus
+                    de maladie détectable plus de 5 ans après l’arrêt du traitement, ce qui constitue un solide espoir de
+                    guérison définitive. »
+                </li>
+            </ul>
+
+            <!-- END OF WORDPRESS INPUT -->
+        </div>
+        
+    </div>
+
+    <div class="social-fab">
+        <a href="" class="buttons" tooltip="Email"></a>
+        <a href="" class="buttons" tooltip="Twitter"></a>
+        <a href="" class="buttons" tooltip="Linkedin"></a>
+        <a href="" class="buttons" tooltip="Facebook"></a>
+        <a class="buttons" tooltip="Share" href=""></a>
+    </div>
+    
+
+
+    <div class="second-section">
+        <div class="container">
+            <div class="text-style-5 col-12 mb-3">
+                Tags
+            </div>
+            <div class="col-12 col-lg-7 tags">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="article-tag">Innovation</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">Recherche</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">R&D</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">Classement</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">NBIC</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">France</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="article-tag">CNRS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-style-5 col-12 mt-5 mb-3">
+                Commentaires
+            </div>
+
+            <div class="col-12 col-lg-7 comment">
+                <div class="text-style-6 mb-2">
+                    Marie Chantal
+                </div>
+                <div class="text-style-3">
+                    Sed si ille hac tam eximia fortuna propter utilitatem rei publicae frui non properat, ut omnia illa conficiat, quid ego,
+                    senator, facere debeo, quem, etiamsi ille aliud vellet, rei publicae consulere oporteret? Superatis Tauri
+                    montis verticibus qui ad solis ortum sublimius attolluntur, Cilicia spatiis porrigitur late distentis
+                    dives bonis omnibus terra, eiusque lateri dextro adnexa Isauria, pari sorte uberi palmite viget et frugibus
+                    minutis, quam mediam navigabile flumen Calycadnus interscindit.
+                </div>
+                <div class="date-badge mt-3 text-right">16/02/2018
+                    <span>10:45</span>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-7 comment">
+                <div class="text-style-6 mb-2">
+                    Marie Chantal
+                </div>
+                <div class="text-style-3">
+                    Sed si ille hac tam eximia fortuna propter utilitatem rei publicae frui non properat, ut omnia illa conficiat, quid ego,
+                    senator, facere debeo, quem, etiamsi ille aliud vellet, rei publicae consulere oporteret? Superatis Tauri
+                    montis verticibus qui ad solis ortum sublimius attolluntur, Cilicia spatiis porrigitur late distentis
+                    dives bonis omnibus terra, eiusque lateri dextro adnexa Isauria, pari sorte uberi palmite viget et frugibus
+                    minutis, quam mediam navigabile flumen Calycadnus interscindit.
+                </div>
+                <div class="date-badge mt-3 text-right">16/02/2018
+                    <span>10:45</span>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-lg-7 comment-form">
+                <div class="text-style-5 mb-3 mt-5">
+                    Laisser un commentaire
+                </div>
+                <form>
+                    <div class="form-group">
+                        <!-- <label for="name">Nom</label> -->
+                        <input type="email" class="form-control" id="inputName" placeholder="Nom">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="e-mail">Email</label> -->
+                        <input type="email" class="form-control" id="InputMail" placeholder="Adresse e-mail">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="e-mail">Site web</label> -->
+                        <input type="email" class="form-control" id="InputWeb" placeholder="Site Web">
+                    </div>
+
+                    <div class="form-group">
+                        <!-- <label for="comment">Commentaire</label> -->
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Commentaire"></textarea>
+                    </div>
+                </form>
+                <div class="row no-gutters">
+                    <div class="col-12 col-sm-4">
+                        <button class="button transparent">
+                            POSTER
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer container-fluid d-flex flex-column justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-center">
+            <div class="foo-text-1">
+                Ombline Zarzycki 2018
+            </div>
+            <div class="foo-text-2">
+                oz@omblinezarzycki.com
+            </div>
+            <div class="social d-flex justify-content-between align-items-start">
+                <img src="assets/in.png" alt="" class="social-icon">
+                <img src="assets/fb.png" alt="" class="social-icon">
+                <img src="assets/tw.png" alt="" class="social-icon">
+            </div>
+        </div>
+        <div class="credits">
+            Design and development by Nicolas Weisslinger & Kynoa
+        </div>
+    </div>
+
+
+</body>
+
+</html>

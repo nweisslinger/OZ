@@ -1,0 +1,436 @@
+// Home Page Buttons
+.button {
+    width: 100%;
+    height: 56px;
+    background-color: none;
+    border-style: none;
+    border-width: 2px;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.29;
+    letter-spacing: 0.07em;
+    text-align: center;
+    border-radius: 0px;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    color: $blue;
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgba(67, 67, 67, 0.25);
+    &.transparent{
+        background-color: transparent;
+    }
+    &:hover {
+        background-color: $blue;
+        color: white;
+        box-shadow: 0 6px 22px 0 rgba(19, 21, 148, 0.44);
+    }
+}
+
+
+//seperator
+.seperator {
+    width: 170px;
+    height: 1px;
+    background-color: $dark-grey;
+}
+
+//Date + Update badge for articles & article card
+.date-badge {
+    font-family: $font-family-1;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: $dark-grey;
+    span {
+        font-family: $font-family-1;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.17;
+        color: $dark-grey;
+    }
+}
+
+
+
+//Tag
+.article-tag{
+    // display: inline;
+    font-family: $font-family-1;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.17;
+    color: $dark-grey;
+    padding: 12px 16px;
+    margin: 0px 0px 12px 0px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 0px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover{
+        
+        background-color: $dark-grey;
+        color: white;
+        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+
+// Article Card
+.article-card {
+    height: 500px; // width: 320px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 24px 0px;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.16);
+    }
+    .article-image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    .card-content {
+        height: 300px;
+    }
+}
+
+
+
+
+
+// Pagination element
+
+.pagination {
+    margin-top: 50px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; // height: 100vh;
+    font-family: $font-family-1;
+    a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        padding: 20px 0;
+        width: 40px;
+        text-align: center;
+        color: white;
+        float: left;
+    }
+    div {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        width: 40px;
+        overflow: hidden;
+        transition: .5s linear;
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        right: 0;
+    }
+    .line {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        bottom: 10px;
+        left: -35px;
+        background: white;
+        transition: .5s ease-in-out;
+    }
+    .left a:nth-child(2):hover~.line,
+    .right a:nth-child(2):hover~.line {
+        left: 5px;
+    }
+    .left a:nth-child(3):hover~.line,
+    .right a:nth-child(3):hover~.line {
+        left: 45px;
+    }
+    .left a:nth-child(4):hover~.line,
+    .right a:nth-child(4):hover~.line {
+        left: 85px;
+    }
+    nav {
+        background: #FCFCFC;
+        color: $dark-grey;
+        position: relative;
+        border-radius: 0px;
+        overflow: hidden; // width: 600px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        transition: .3s linear;
+    }
+    .text {
+        display: inline-block;
+        letter-spacing: 2px;
+        padding: 20px 10px;
+        cursor: pointer;
+    }
+    nav:hover div {
+        background: $dark-grey;
+        opacity: 1;
+    }
+    div:hover .prev {
+        opacity: 0;
+        display: none;
+    }
+    div:hover .next {
+        display: none;
+    }
+    div:hover {
+        width: auto;
+    }
+
+}
+
+.pagination-mobile{
+    display:none;
+    justify-content: space-between;
+    height: 56px;
+
+
+    .pagination-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 100%;
+        border-radius: 100%;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        transition-property: all;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        &:active{
+            box-shadow: 0 0 0 0 white;
+        }
+    }
+}
+
+@media (hover:none){
+    .pagination{
+        display: none;
+    }
+    .pagination-mobile{
+        display:flex;
+       
+    }
+}
+
+
+
+
+
+
+
+
+//Searchbar
+// PEN BY PETR GAZAROV
+// -- https://github.com/petrgazarov -- 
+$input-font-size: 16px;
+$font-family: Sofia Pro;
+.input-wrapper {
+    position: relative;
+    width: 200px;
+    // margin: 0px auto;
+
+    .input-highlight {
+        font-size: $input-font-size;
+        user-select: none;
+        border-top: 3px solid white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 100%;
+        height: 0;
+        color: transparent;
+        font-family: $font-family;
+        overflow: hidden;
+    }
+    input {
+        height: 30px;
+        width: 100%;
+        min-width: 100%;
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+        color: #003F93;
+        font-size: $input-font-size;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid lightgray;
+        font-family: $font-family;
+        &::placeholder {
+            color: lightgray;
+        }
+        &:focus {
+            +.input-highlight {
+                border-top: 2px solid #003F93;
+            }
+        }
+    }
+}
+
+
+
+//Comment
+
+.comment{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+//Social Share button
+
+.social-fab {
+    bottom: 16px;
+    right: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    width:56px;
+    float: right;
+    margin-top: -320px;
+    // margin-left: 70vw;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+
+    &.visible{
+        opacity: 1;
+    }
+
+
+
+  .buttons {
+    box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 
+                0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 20px auto 0;
+    position: relative;
+    -webkit-transition: all .1s ease-out;
+            transition: all .1s ease-out;  
+  }
+  
+  .buttons:active, 
+  .buttons:focus, 
+  .buttons:hover {
+    box-shadow: 0 0 4px rgba(0,0,0,.14),
+      0 4px 8px rgba(0,0,0,.28);
+  }
+  
+  .buttons:not(:last-child) {
+    width: 40px;
+    height: 40px;
+    margin: 15px auto 0;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  
+  &:hover 
+  .buttons:not(:last-child) {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+
+  }
+  
+  /* Unessential styling for sliding up buttons at differnt speeds */
+  
+  .buttons:nth-last-child(1) {
+    -webkit-transition-delay: 25ms;
+            transition-delay: 25ms;
+    background-image: url('../assets/share-02.png');
+    background-size: cover;
+  }
+  
+  .buttons:not(:last-child):nth-last-child(2) {
+    -webkit-transition-delay: 50ms;
+            transition-delay: 20ms;
+    background-image: url('../assets/share-03.png');
+    background-size: cover;
+  }
+  
+  .buttons:not(:last-child):nth-last-child(3) {
+    -webkit-transition-delay: 75ms;
+            transition-delay: 40ms;
+    background-image: url('../assets/share-04.png');
+    background-size: cover;
+  }
+  
+  .buttons:not(:last-child):nth-last-child(4) {
+    -webkit-transition-delay: 100ms;
+            transition-delay: 60ms;
+    background-image: url('../assets/share-05.png');
+    background-size: cover;
+  }
+
+  .buttons:not(:last-child):nth-last-child(5) {
+    -webkit-transition-delay: 100ms;
+            transition-delay: 60ms;
+    background-image: url('../assets/share-06.png');
+    background-size: cover;
+  }
+  
+  /* Show tooltip content on hover */
+  
+  [tooltip]:before {
+    bottom: 25%;
+    font-family: arial;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #585858;
+    color: #fff;
+    content: attr(tooltip);
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px 7px;
+    margin-right: 12px;
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
+  }
+  
+  [tooltip]:hover:before,
+  [tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 992px){
+    .social-fab {
+        margin-right: 20vw;
+    }
+}
+
+@media (hover:none){
+    .social-fab {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+.article-container {
+    margin-bottom: 100px;
+}
+
+.article-content{
+    // margin-top:100px;
+
+
+    img{
+        width:100%;
+        height:auto;
+        margin: 32px 0px;
+    }
+
+
+}
+
+.article-hero-image {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+@media (min-width:520px) {
+    .article-hero-image {
+        background-image: url('../assets/hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+}
+
+.comment-form{
+    font-family: $font-family-1;
+    // margin-top:100px;
+    // margin-bottom: 100px;
+}
+
+.second-section{
+    background-color: $super-light-grey;
+    padding: 100px 0px;;
+}

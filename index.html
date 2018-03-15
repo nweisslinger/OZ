@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap scripts& css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Custom scripts -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/searchbar.js"></script>
+
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="stylesheets/main.min.css">
+
+
+    <title>Ombline Zarzicki</title>
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html" id="navbar-brand">
+            <img src="../assets/logo.png" alt="" style="width:150px; height:auto;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-big" href="index.html">ACCEUIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-big" href="bio.html">BIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-small" href="category.html">SANTÉ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-small" href="category.html">PSYCHOLOGIE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-small" href="category.html">ENTREPRISE</a>
+                </li>
+
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+            </form> -->
+            <div class='input-wrapper'>
+                <input id='search-input' placeholder='Search...' />
+                <span id='highlight-span' class='input-highlight' />
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div class="container-fluid background align-items-end d-flex">
+
+        <div class="container main">
+            <div class="row align-items-end">
+
+
+                <!-- Portrait -->
+                <div class="col-6 d-none d-lg-block">
+                    <img src="assets/profile.png" alt="" class="img-fluid">
+                </div>
+
+
+                <!-- Bloc de droite -->
+                <div class="col-12 col-lg-6" id="home-right-block">
+
+                    <p class="text-style-1 bienvenue">
+                        Bienvenue!
+                    </p>
+                    <p class="text-style-2">
+                        Ce site regroupe des articles qui ont pour objectif de vous aider à retrouver un bon équilibre de vie, en parcourant les
+                        thèmes de la santé, de la psychologie, et des mechanismes de l’entreprise, tout en plaçant l’humain
+                        au centre du sujet.
+                        <br>
+                        <br> Bonne lecture!
+                    </p>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mt-5">
+                            <button class="button">SANTÉ</button>
+                            <div class="sub-button">Prenez soin de vous</div>
+                        </div>
+                        <div class="col-12 col-sm-4 mt-5">
+                            <button class="button">PSYCHOLOGIE</button>
+                            <div class="sub-button">Comprenez l'humain</div>
+                        </div>
+                        <div class="col-12 col-sm-4 mt-5">
+                            <button class="button">ENTREPRISE</button>
+                            <div class="sub-button">Restez dans le coup</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer container-fluid d-flex flex-column justify-content-between align-items-center">
+        <div class="d-flex flex-column justify-content-start align-items-center">
+            <div class="foo-text-1">
+                Ombline Zarzycki 2018
+            </div>
+            <div class="foo-text-2">
+                oz@omblinezarzycki.com
+            </div>
+            <div class="social d-flex justify-content-between align-items-start">
+                <img src="assets/in.png" alt="" class="social-icon">
+                <img src="assets/fb.png" alt="" class="social-icon">
+                <img src="assets/tw.png" alt="" class="social-icon">
+            </div>
+        </div>
+        <div class="credits">
+            Design and development by Nicolas Weisslinger & Kynoa
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

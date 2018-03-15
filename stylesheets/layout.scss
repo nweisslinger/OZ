@@ -1,0 +1,110 @@
+// navbar
+.navbar {
+    background-color: white;
+    transition: background-color 200ms linear;
+
+}
+
+@media (min-width: 992px){
+    .navbar {
+        background-color: transparent;
+        transition: background-color 200ms linear;
+    }
+}
+
+#navbar-brand {
+    font-family: $font-family-1;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 32px;
+    color: $dark-grey;
+}
+
+.nav-item {
+    margin-right: 60px;
+}
+
+.nav-link {
+    &.nav-link-big {
+        font-family: $font-family-1;
+        font-size: 13px;
+        font-weight: 900;
+        color: $dark-grey;
+    }
+    &.nav-link-small {
+        font-family: $font-family-1;
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+
+.navbar.solid {
+    background-color: white !important;
+    transition: all 200ms linear;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
+  }
+
+
+
+
+
+
+
+
+// footer
+.footer {
+    background-color: $dark-grey;
+}
+
+.foo-text-1 {
+    font-family: $font-family-1;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $soft-white;
+    margin-top: 40px;
+}
+
+.foo-text-2 {
+    font-family: $font-family-1;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $soft-white;
+    margin-top: 4px;
+}
+
+.social {
+    width: 120px;
+    margin-top: 8px;
+    .social-icon {
+        width: 24px;
+        height: auto;
+        transition-property: width;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:hover{
+            
+        }
+    }
+}
+
+.credits {
+    font-family: $font-family-1;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $soft-white;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+
+//Shitty Link style correction
+a:hover{
+    text-decoration: none;
+}
